@@ -1,6 +1,10 @@
+html {
+  width: 100%;
+  max-width: 1440px;
+}
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 .bodysection {
@@ -10,9 +14,11 @@
   flex-direction: column;
   align-items: center;
   font-style: normal;
-  box-sizing: border-box;
+  box-sizing: inherit;
   font-family: "Inter";
   margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
 }
 .navbar {
   display: flex;
@@ -24,7 +30,8 @@
 }
 .navsection {
   display: flex;
-  width: 1280px;
+  width: 100%;
+  max-width: 1280px;
   align-items: center;
   gap: 64px;
 }
@@ -65,6 +72,7 @@ button {
 }
 .h1container {
   display: flex;
+  width: 100%;
   width: 1440px;
   padding: 96px 0px;
   flex-direction: column;
@@ -979,7 +987,11 @@ h1 {
   }
   .bodysection {
     display: block;
+    justify-content: center;
     margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    flex-wrap: wrap;
   }
   .h1container2 {
     display: flex;
@@ -992,10 +1004,18 @@ h1 {
     gap: 16px;
     align-self: stretch;
   }
+  .section1part1text,
   .section1row {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    max-width: 800px;
+    text-align: center;
+    flex-direction: column;
+  }
+  .section2 {
+    width: 100%;
+    max-width: 576px;
+    display: flex;
   }
   .section2part1row1 {
     display: flex;
@@ -1011,5 +1031,47 @@ h1 {
   }
   .section2 img {
     display: none;
+  }
+  .section3text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 576px;
+  }
+  .section3img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1222px;
+  }
+  .section3imgrow1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section4part2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section4part2card {
+    width: 100%;
+    max-width: 576px;
+  }
+  .section5part2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section5part2column1 {
+    width: 100%;
+    max-width: 576px;
+  }
+  .section6part1text {
+    width: 100%;
+    max-width: 8000px;
+  }
+  .section7part1column {
+    display: flex;
+    flex-direction: column;
   }
 }
