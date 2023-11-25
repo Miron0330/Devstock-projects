@@ -1066,10 +1066,6 @@ h1 {
     width: 100%;
     max-width: 576px;
   }
-  .section6part1text {
-    width: 100%;
-    max-width: 8000px;
-  }
   .section7part1column {
     display: flex;
     flex-direction: column;
